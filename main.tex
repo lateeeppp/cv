@@ -1,0 +1,259 @@
+%-------------------------
+% Resume in Latex - Ikhsannudin Lathief
+% Based on Jake Gutierrez's Resume template
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage[T1]{fontenc}
+\usepackage[expansion=false]{microtype}
+\DisableLigatures{encoding = *, family = *}
+
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\setlength{\footskip}{4.1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+% Ensure that generated pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \small #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \small #2\\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeCertificationHeading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \small #2\\
+    \end{tabular*}\vspace{0.5pt}
+}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, label=\raisebox{0.15ex}{\tiny$\bullet$}]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\huge \scshape \textbf{Ikhsannudin Lathief}} \\ \vspace{2pt}
+    {\large \textbf{Data Quality Engineer}} \\ \vspace{3pt}
+    \small
+    Lampung, Indonesia $|$
+    \href{tel:+62895355146679}{+62895355146679} $|$
+    \href{mailto:ikhsannudinlathief@gmail.com}{ikhsannudinlathief@gmail.com} \\ \vspace{3pt}
+    \href{https://www.linkedin.com/in/ikhsannudin-lathief/}{linkedin.com/in/ikhsannudin-lathief} $|$
+    \href{https://github.com/lateeeppp}{github.com/lateeeppp}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Professional Summary}
+\small{
+Informatics graduate specializing in Data Engineering with practical expertise in designing scalable ETL/ELT pipelines, dimensional data models, and modern data warehouse architectures. Experienced in implementing idempotent workflow orchestration, automated data quality validations, and query performance optimizations. Dedicated to delivering reliable, analytics-ready models to empower data-driven decision-making, complemented by practical software engineering experience in real-time data streaming and system integration.
+}
+\vspace{-2pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Institut Teknologi Sumatera}{Lampung, Indonesia}
+    {Bachelor of Informatics Engineering (S.Kom.) $|$ GPA: 3.86 / 4.00}{August 2022 -- July 2026}
+    \vspace{0pt}
+    \resumeItemListStart
+      \resumeItem{\textbf{Final-Year Project:} Application of Curriculum Learning Technique in IndoBERT-lite Model Training for Sarcasm Classification in Natural Indonesian Text}
+      \vspace{0.5pt}
+      \resumeItem{\textbf{Relevant Subjects:} Database Basics, Database Management, Cloud Computing, Machine Learning, Object Oriented Programming}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------SKILLS & LANGUAGES-----------
+\section{Skills \& Languages}
+\begin{itemize}[leftmargin=0.0in, label={}]
+    \small{\item{
+     \textbf{Core Concepts}{: ETL/ELT, Data Modeling, Medallion Architecture, Data Warehousing, Slowly Changing Dimensions (SCD), SQL Optimization} \\ \vspace{3pt}
+     \textbf{Data Processing \& Orchestration}{: Apache Airflow, Apache Spark (PySpark), dbt, Pandas, NumPy} \\ \vspace{3pt}
+     \textbf{Programming \& Databases}{: Python, SQL, PostgreSQL} \\ \vspace{3pt}
+     \textbf{Cloud \& Warehousing}{: AWS (S3, Glue, Redshift), GCP (Cloud Storage, BigQuery)} \\ \vspace{3pt}
+     \textbf{Development Tools}{: Docker, Git, Linux, Jupyter} \\ \vspace{3pt}
+     \textbf{Languages}{: Indonesian (Native), English (Basic to Intermediate)}
+    }}
+\end{itemize}
+\vspace{-6pt}
+
+%-----------DATA ENGINEERING & RESEARCH PROJECTS-----------
+\section{Data Engineering \& Research Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{Taxi Trip Data Pipeline} $|$ \emph{ETL, AWS (S3, Glue, Redshift), Spark (PySpark), Apache Airflow, Streamlit}}{2026}
+    \resumeItemListStart
+      \resumeItem{Processed 44M+ taxi trip records through an end-to-end ETL pipeline following the Medallion architecture (Bronze, Silver, Gold) in Amazon S3 using PySpark (Core API \& Spark SQL) on AWS Glue.}
+      \resumeItem{Designed a Star Schema (1 fact, 5 dimensions) in Amazon Redshift, optimizing query performance and RPU costs via SORTKEY and DISTKEY strategies (zone map pruning \& colocated joins).}
+      \resumeItem{Orchestrated idempotent pipelines and safe historical backfills in Apache Airflow via atomic partition replacements, connecting curated data to an interactive Streamlit BI dashboard via Redshift Data API.}
+    \resumeItemListEnd
+    \vspace{2pt}
+
+  \resumeProjectHeading
+    {\textbf{E-Commerce Data Pipeline} $|$ \emph{ETL, Spark (PySpark), AWS S3, Apache Airflow, Streamlit}}{2026}
+    \resumeItemListStart
+      \resumeItem{Processed and cleaned 100K+ e-commerce orders across 9 relational tables using PySpark and AWS S3 in an end-to-end batch data pipeline.}
+      \resumeItem{Designed a Star Schema with 5 dimensions and 3 fact tables, implementing SCD Type 2 to track customer relocation history over time.}
+      \resumeItem{Orchestrated a 9-job Airflow pipeline with dynamic partition overwrites for idempotent backfills, validating data contracts with Pytest before publishing 4 business marts to a Streamlit dashboard.}
+    \resumeItemListEnd
+    \vspace{2pt}
+
+  \resumeProjectHeading
+    {\textbf{Wikipedia API Data Pipeline} $|$ \emph{ELT, Apache Airflow, dbt, BigQuery}}{2026}
+    \resumeItemListStart
+      \resumeItem{Developed an ELT pipeline processing 5,000+ Wikipedia records, orchestrating Airflow to ingest API data into Google Cloud Storage and load raw tables into BigQuery.}
+      \resumeItem{Engineered modular data transformations across staging and marts layers using dbt and SQL in BigQuery, implementing automated data tests to detect anomalies and ensure integrity.}
+      \resumeItem{Optimized BigQuery query performance and storage cost via partitioning and clustering, utilizing Airflow backfill capabilities to idempotently reprocess historical data without duplication.}
+    \resumeItemListEnd
+    \vspace{2pt}
+
+  \resumeProjectHeading
+    {\textbf{Indonesian Sarcasm Classification} $|$ \emph{Pandas, NumPy, Matplotlib, Jupyter, PyTorch}}{2026}
+    \resumeItemListStart
+      \resumeItem{Conducted undergraduate thesis research applying curriculum learning with IndoBERT-lite, building an end-to-end text preprocessing pipeline using Python, Pandas, and Regex for noisy Reddit and Twitter text.}
+      \resumeItem{Implemented dynamic training batch scheduling based on token matrix norms using NumPy and PyTorch, addressing class imbalance via dynamic class weighting and stratified splits.}
+      \resumeItem{Organized data workflows and experiment tracking across 15+ modular notebooks using Pandas DataFrames for reproducible evaluation and benchmarking.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------WORK EXPERIENCE-----------
+\section{Work Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {PT. Init Visual Experia}{Lampung, Indonesia}
+    {Software Engineer Intern $|$ Project: Invix (IoT Data Pipeline \& Geospatial Visualization)}{July 2025 -- August 2025}
+    \resumeItemListStart
+      \resumeItem{Prevented live tracking data loss across multiple IoT devices streaming at 1-second intervals by implementing a dual-channel WebSocket push and HTTP polling fallback.}
+      \resumeItem{Improved data consistency and reduced visualization errors by building an automated transformation pipeline for parsing string numerics, mapping booleans to categorical values, and merging incremental state.}
+      \resumeItem{Built an automated processing engine to transform raw location logs into structured trip timelines based on engine state transitions and driving duration.}
+      \resumeItem{Developed interactive geospatial visualizations using Leaflet, OpenStreetMap reverse geocoding, route polylines, and in-memory caching.}
+    \resumeItemListEnd
+    \vspace{4.5pt}
+
+  \resumeSubheading
+    {UPA TIK ITERA}{Lampung, Indonesia}
+    {Computer and Software Practicum Assistant}{January 2024 -- April 2024}
+    \resumeItemListStart
+      \resumeItem{Provided technical guidance to 60+ undergraduate students during hands-on programming and software practicum sessions.}
+      \resumeItem{Evaluated weekly programming assignments and provided detailed technical feedback to help students optimize code implementations.}
+      \resumeItem{Supported lecturers in preparing and delivering practicum laboratory activities, environment setups, and troubleshooting technical issues.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+\resumeSubHeadingListStart
+  \resumeCertificationHeading
+    {\textbf{Data Engineer Associate} $|$ \emph{DataCamp} \footnotesize{(Credential ID: DEA0017615804198)}}{September 2026 -- September 2028}
+  \resumeCertificationHeading
+    {\textbf{SQL Associate} $|$ \emph{DataCamp} \footnotesize{(Credential ID: SQA0012471283289)}}{September 2026 -- September 2028}
+\resumeSubHeadingListEnd
+
+%-----------LEADERSHIP & ORGANIZATIONS-----------
+\section{Leadership \& Organizations}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {UKM Petanque ITERA}{Lampung, Indonesia}
+    {Head of Public Relations}{November 2024 -- August 2025}
+    \resumeItemListStart
+      \resumeItem{Coordinated external communications and collaboration for joint training events, facilitating participation and engagement with athletes and organizations outside ITERA.}
+    \resumeItemListEnd
+    \vspace{4.5pt}
+  \resumeSubSubheading
+    {Head of the Athlete Development Division}{November 2023 -- August 2024}
+    \resumeItemListStart
+      \resumeItem{Led the development of 20+ athletes through structured training and competition preparation, contributing to a national-level championship achievement.}
+    \resumeItemListEnd
+    \vspace{4.5pt}
+
+  \resumeSubheading
+    {Kumabat Cup Petanque Open Tournament (10th Dies Natalis ITERA)}{Lampung, Indonesia}
+    {Field Coordinator}{October 2024}
+    \resumeItemListStart
+      \resumeItem{Coordinated on-site operations for a national-level Petanque tournament involving teams from multiple provinces, leading field committee members and ensuring smooth match execution.}
+    \resumeItemListEnd
+    \vspace{4.5pt}
+
+  \resumeSubheading
+    {Petanque Competition (Dies Natalis ITERA)}{Lampung, Indonesia}
+    {Head of Field Operations}{October 2023}
+    \resumeItemListStart
+      \resumeItem{Directed field operations and match logistics for the Petanque competition during ITERA's annual anniversary event, overseeing committee workflows and participant scheduling.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\end{document}
