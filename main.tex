@@ -18,8 +18,9 @@
 \usepackage{tabularx}
 \usepackage{multicol}
 \usepackage[T1]{fontenc}
+\usepackage{lmodern}
 \usepackage[expansion=false]{microtype}
-\DisableLigatures{encoding = *, family = *}
+\DisableLigatures[f]{encoding = *, family = *}
 
 \setlength{\multicolsep}{-3.0pt}
 \setlength{\columnsep}{-1pt}
@@ -46,7 +47,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-6pt}\scshape\raggedright\large\bfseries
+  \vspace{-6pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
 
 % Ensure that generated pdf is machine readable/ATS parsable
@@ -89,7 +90,7 @@
     \end{tabular*}\vspace{0.5pt}
 }
 
-\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, label=\raisebox{0.15ex}{\tiny$\bullet$}]}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, label=\vphantom{X}\tiny$\bullet$]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
@@ -101,12 +102,12 @@
 
 %----------HEADING----------
 \begin{center}
-    {\huge \scshape \textbf{Ikhsannudin Lathief}} \\ \vspace{2pt}
-    {\large \textbf{Data Quality Engineer}} \\ \vspace{3pt}
+    {\Huge \scshape Ikhsannudin Lathief} \\ \vspace{2pt}
+    {\large \textbf{Data Engineer}} \\ \vspace{3pt}
     \small
     Lampung, Indonesia $|$
     \href{tel:+62895355146679}{+62895355146679} $|$
-    \href{mailto:ikhsannudinlathief@gmail.com}{ikhsannudinlathief@gmail.com} \\ \vspace{3pt}
+    \href{mailto:ikhsannudin.lathief16@gmail.com}{ikhsannudin.lathief16@gmail.com} \\ \vspace{3pt}
     \href{https://www.linkedin.com/in/ikhsannudin-lathief/}{linkedin.com/in/ikhsannudin-lathief} $|$
     \href{https://github.com/lateeeppp}{github.com/lateeeppp}
 \end{center}
